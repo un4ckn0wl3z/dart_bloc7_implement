@@ -1,0 +1,82 @@
+{
+    "uuid": "cd8ffeda-92c5-4e00-b211-ff076434772c",
+    "lastMigration": 22,
+    "name": "FlutterBLoC7",
+    "endpointPrefix": "",
+    "latency": 0,
+    "port": 3001,
+    "hostname": "0.0.0.0",
+    "routes": [
+        {
+            "uuid": "e230452b-2542-4608-b1bc-7bbcafe44ff0",
+            "documentation": "Simulate Genders enpoint",
+            "method": "get",
+            "endpoint": "registration/genders",
+            "responses": [
+                {
+                    "uuid": "26e7102f-5df0-4767-ba7d-8061b1970f58",
+                    "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"ชาย\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"หญิง\"\n  }\n]",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true
+                },
+                {
+                    "uuid": "4bc3bf04-2828-46d7-8f44-566c02908357",
+                    "body": "{}",
+                    "latency": 0,
+                    "statusCode": 404,
+                    "label": "",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false
+                }
+            ],
+            "enabled": true,
+            "responseMode": null
+        }
+    ],
+    "proxyMode": false,
+    "proxyHost": "",
+    "proxyRemovePrefix": false,
+    "tlsOptions": {
+        "enabled": false,
+        "type": "CERT",
+        "pfxPath": "",
+        "certPath": "",
+        "keyPath": "",
+        "caPath": "",
+        "passphrase": ""
+    },
+    "cors": true,
+    "headers": [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "proxyReqHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "proxyResHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ]
+}
